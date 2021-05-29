@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Anime Chatbot</title>
+</head>
+
+<body style="background-color: #30475e;">
+    <div class="container-fluid">
+        <div class="row pt-2" style="background-color: #222831;">
+            <div class="col-6">
+                <p class="text-left default-text lead">ANIME CHATBOT</p>
+            </div>
+            <div class="col-6 text-right">
+                <button class="btn-primary" style="background-color: #30475e !important; border-color: #30475e;">Login</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                
+                <!-- Anime recommendations for the day carousel -->
+                <!-- picture sizes must be 1920 x 1080 -->
+                <p class="text default-text mt-5" style="font-size: 16px;">Anime recommendations of the day</p>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://m.media-amazon.com/images/M/MV5BZTI4MDRmMTYtN2U4Zi00MjI4LWI5MzEtZGIyMjJlMjk1YTRiXkEyXkFqcGdeQXVyOTc4OTAwMjU@._V1_.jpg" alt="Don't Toy with Me, Miss Nagatoro">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="background-color: #f2a365; text-shadow: 2px 2px #000000">Don't Toy with Me, Miss Nagatoro</h5>
+                                <a class="px-3" href="https://myanimelist.net/anime/42361/Ijiranaide_Nagatoro-san" style="background-color: #f2a365; font-weight: 500; color: #30475e;">Click here for Synopsis!</a>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://m.media-amazon.com/images/M/MV5BOGUxNmU4YjktYmE4MC00MjM1LTgwMmMtOWIxYzFhNmRmYWIzXkEyXkFqcGdeQXVyMTIyMzk3NDU1._V1_.jpg" alt="I've Been Killing Slimes for 300 Years and Maxed Out My Level">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="background-color: #f2a365; text-shadow: 2px 2px #000000">I've Been Killing Slimes for 300 Years and Maxed Out My Level</h5>
+                                <a class="px-3" href="https://myanimelist.net/anime/40586/Slime_Taoshite_300-nen_Shiranai_Uchi_ni_Level_Max_ni_Nattemashita" style="background-color: #f2a365; font-weight: 500; color: #30475e;">Click here for Synopsis!</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://static.zerochan.net/Asakura.Yoh.full.3074445.jpg" alt="Shaman King">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="background-color: #f2a365; text-shadow: 2px 2px #000000">Shaman King (2021)</h5>
+                                <a class="px-3" href="https://myanimelist.net/anime/42205/Shaman_King_2021" style="background-color: #f2a365; font-weight: 500; color: #30475e;">Click here for Synopsis!</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+                <!-- User history log -->
+                <p class="text default-text mt-5" style="font-size: 16px;">User history log</p>
+                <input class="form-control" type="text" placeholder="You must be logged in to use this feature" readonly>
+
+                
+                <!-- Top 5 Animes of All Time -->
+                <!-- picture sizes must be 1920 x 1080 -->
+                <p class="text default-text mt-5" style="font-size: 16px;">Top 5 Animes of All Time (myanimelist.net)</p>
+                <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://i.pinimg.com/originals/c3/89/9f/c3899f7371423ee10598d231a8241384.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="background-color: #f2a365; text-shadow: 2px 2px #000000">1st: Fullmetal Alchemist: Brotherhood</h5>
+                                <a class="px-3" href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood" style="background-color: #f2a365; font-weight: 500; color: #30475e;">Click here for Synopsis!</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://wallpapercave.com/wp/wp8276576.jpg" alt="Shingeki no Kyojin Season 3 Part 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="background-color: #f2a365; text-shadow: 2px 2px #000000">2nd: Shingeki no Kyojin Season 3 Part 2</h5>
+                                <a class="px-3" href="https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2" style="background-color: #f2a365; font-weight: 500; color: #30475e;">Click here for Synopsis!</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://wallpaperaccess.com/full/3382977.png" alt="Steins;Gate">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="background-color: #f2a365; text-shadow: 2px 2px #000000">3rd: Steins;Gate</h5>
+                                <a class="px-3" href="https://myanimelist.net/anime/9253/Steins_Gate" style="background-color: #f2a365; font-weight: 500; color: #30475e;">Click here for Synopsis!</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://wallpapermemory.com/uploads/744/gintama-background-full-hd-332151.jpg" alt="Gintama°">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="background-color: #f2a365; text-shadow: 2px 2px #000000">4th: Gintama°</h5>
+                                <a class="px-3" href="https://myanimelist.net/anime/28977/Gintama%C2%B0" style="background-color: #f2a365; font-weight: 500; color: #30475e;">Click here for Synopsis!</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://cdn.wallpapersafari.com/45/85/y0j2DG.jpg" alt="Hunter x Hunter (2011)">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="background-color: #f2a365; text-shadow: 2px 2px #000000">5th: Hunter x Hunter (2011)</h5>
+                                <a class="px-3" href="https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011" style="background-color: #f2a365; font-weight: 500; color: #30475e;">Click here for Synopsis!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <widgetbot
+                server="848215332283351050"
+                channel="848215332283351053"
+                width="1415"
+                height="912"
+                >
+            </widgetbot>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

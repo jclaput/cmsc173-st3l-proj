@@ -1,0 +1,9 @@
+.login-btn{
+	color: #f2a365 !important; /*!important overrides bootstrap style*/
+	background-color: #30475e !important;
+}
+
+.default-text{
+	color: #ececec;
+	font-family: Verdana;
+}
