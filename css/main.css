@@ -8,13 +8,6 @@
 	font-family: Verdana;
 }
 
-/* Fixes layout for users whose windows 10 scale and layout settings is set to 125%*/
-@media (-webkit-device-pixel-ratio: 1.25) {
-	* {
-	  zoom: 0.95;
-	}
-} 
-
 @media screen and (min-resolution: 120dpi) { 
     /*body {transform: scale(0.8);width: 125%;height: 125%;margin-left: -12.5%;}*/
     body {transform: scale(0.80);transform-origin:top left;width: 125%;height: 125%;}
